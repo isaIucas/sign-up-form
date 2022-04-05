@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css"></link>
+        <script src="javascript.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo-background-color" >
+            </div>
+            <div class="credit" >
+                <span>
+                Photo by <a href="https://unsplash.com/@haliewestphoto"> Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></span>
+            </div>
+            <div class="logo" >
+                <img src="./img/odin-lined.png" height="100px" alt="logo">
+                ODIN
+            </div>
+            <div class="trim">
+                <img src="./img/leafygreens.avif" alt="nature">
+            </div>
+            <div>
+                <div class="padding description">
+                    <h3>
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for <em>reviewing</em> page layouts and visual mockups.
+                    </h3>
+                    <h3>
+                        <em>Let's go!</em>
+                    </h3>
+                </div>
+                <div>
+                    <div class="padding contentForm">
+                        <form id="myForm"> 
+                            <caption><strong>Let's do this!</strong></caption>
+                            <div class="contentRow">
+                                <div class="contentColumn">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" name="firstName" id="firstName" placeholder=" "   required>
+                                </div>
+                                <div class="contentColumn">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" name="lastName" id="lastName" placeholder=" " required>
+                                </div>
+                            </div>
+                            <div class="contentRow">
+                                <div class="contentColumn">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="contentColumn">
+                                    <label for="phoneNum">Phone Number</label>
+                                    <input type="text" name="phoneNum" id="phoneNum"pattern="[0-9]{10}" title="Please enter a valid digit phone number, example: 4152322343" required>
+                                </div>
+                            </div>
+                            <div class="contentRow">
+                                <div class="contentColumn">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" required>
+                                </div>
+                                <div class="contentColumn">
+                                    <label for="confirmpass">Confirm Password</label>
+                                    <input type="password" name="confirmpass" id="confirmpass" required>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="padding bottom-section">
+                    <input class="pure-button pure-button-primary" type="submit" form="myForm" value="Create Account"/> 
+                    <p><strong>Already have an account?</strong> <a  href="">Log in</a></p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
